@@ -1,0 +1,30 @@
+.navbar{
+    box-shadow: 0 4px 2px -2px gray !important;
+    z-index: 2 !important;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    padding: 0px;
+    color: #28a745;
+    margin-left: 8%;
+    font-weight: bold;
+}
+
+.navbar-shopping-cart{
+    font-size: 35px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    color: #28a745;
+}
+
+.navbar-badge{
+    position: relative;
+    right: 24%;
+    top: -33%;
+}
+
+.navbar-checkoutButton{
+    padding: 4px;
+    font-weight: 500;
+}
