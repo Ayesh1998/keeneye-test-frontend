@@ -30,7 +30,7 @@ export const fetchProducts = () => (dispatch) => {
       Pragma: "no-cache",
     },
   }).then((response) => {
-      const robotsModified = response.data.data.map((item, index) => ({
+      const robotsModified = response?.data?.data.map((item, index) => ({
         ...item,
         id: index,
         noAddedToCart: 0,
@@ -41,7 +41,7 @@ export const fetchProducts = () => (dispatch) => {
         type: "FETCH_PRODUCTS",
         payload: {
           productsModified: robotsModified,
-          productsOriginal: response.data.data,
+          productsOriginal: response?.data?.data,
         },
       });
     }).catch((e) => {

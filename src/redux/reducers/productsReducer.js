@@ -38,8 +38,8 @@ export const ProductsReducer = (state = initState, action) => {
     case "FETCH_PRODUCTS":
       return {
         ...state,
-        productsModified: action.payload.productsModified,
-        productsOriginal: action.payload.productsOriginal,
+        productsModified: action.payload?.productsModified,
+        productsOriginal: action.payload?.productsOriginal,
       };
     case "FETCH_PRODUCTS_ERROR":
       return {
